@@ -1,0 +1,5 @@
+==============
+sinar.advisory
+==============
+
+User documentation
