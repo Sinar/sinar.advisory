@@ -4,15 +4,29 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       i18n:domain="sinar.advisory"
       metal:use-macro="context/main_template/macros/master">
+
 <body>
   <metal:content-core fill-slot="content-core">
   <metal:block define-macro="content-core">
+     
+      <div tal:content="structure context/text/output | nothing" />
+                     
+            <dl>
+               <dt>Result:</dt>
+               <dd tal:content="context/advisory_result"></dd>
+           </dl>
 
-      <h2 i18n:translate="">Sample View</h2>
-      <!--<div tal:replace="view/my_custom_view_method" />-->
-      <!--<div tal:replace="context/my_custom_field" />-->
+      
+            <dl>
+               <dt>Resource person:</dt>
+               <dd tal:content="context/resource_person"></dd>
+           </dl>
+
+
 
   </metal:block>
   </metal:content-core>
+
+
 </body>
 </html>

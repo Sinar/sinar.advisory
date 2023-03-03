@@ -1,0 +1,32 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
+  i18n_domain="plone">
+
+    <include package="plone.behavior" file="meta.zcml"/>
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <plone:behavior
+        name="sinar.advisory.advisory_result"
+        title="AdvisoryResult"
+        description="Result of the advisory provided"
+        provides=".advisory_result.IAdvisoryResult"
+        factory=".advisory_result.AdvisoryResult"
+        marker=".advisory_result.IAdvisoryResultMarker"
+        />
+
+
+    <plone:behavior
+        name="sinar.advisory.resource_person"
+        title="ResourcePerson"
+        description="Resource person who provided advisory"
+        provides=".resource_person.IResourcePerson"
+        factory=".resource_person.ResourcePerson"
+        marker=".resource_person.IResourcePersonMarker"
+        />
+
+
+</configure>
