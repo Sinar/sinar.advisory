@@ -9,7 +9,7 @@
   <browser:page
     name="advisory-view"
     for="*"
-    class=".my_view.MyView"
+    class=".advisory_view.AdvisoryView"
     template="advisory_view.pt"
     permission="zope2.View"
     layer="sinar.advisory.interfaces.ISinarAdvisoryLayer"
