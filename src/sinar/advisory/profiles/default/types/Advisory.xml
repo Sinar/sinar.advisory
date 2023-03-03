@@ -52,6 +52,7 @@
     <element value="plone.richtext"/>
     <element value="sinar.advisory.resource_person" />
     <element value="sinar.advisory.advisory_result" />
+    <element value="sinar.organizations.partners" />
     <!--<element value="plone.tableofcontents"/>-->
     <!--<element value="plone.versioning" />-->
     <!--<element value="plone.translatable" />-->
